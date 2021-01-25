@@ -382,7 +382,6 @@ body.ie .ibg img {
 
 .work {
   background-color: #000;
-  padding-bottom: 120px;
   padding-top: 120px;
   color: #fff;
 }
@@ -413,6 +412,10 @@ body.ie .ibg img {
   -webkit-flex: 0 1 33.333%;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
+}
+
+.work__columns:last-child {
+  margin-bottom: 120px;
 }
 
 .work__numeral {
@@ -456,12 +459,72 @@ body.ie .ibg img {
 .title {
   font-weight: 700;
   font-size: 55px;
+  line-height: 66px;
   line-height: 1.2;
 }
 
 .text {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.philosophy {
+  background-color: #FFF3E4;
+}
+
+.philosophy__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.philosophy__column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.philosophy__body {
+  padding-top: 120px;
+  padding-bottom: 124px;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+
+.philosophy__title {
+  margin: 0 0 24px 0;
+  color: #181823;
+}
+
+.philosophy__text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5B6876;
+  margin-bottom: 134px;
+}
+
+.philosophy__link a {
+  color: #181823;
+}
+
+.philosophy__image {
+  height: 100%;
+}
+
+.philosophy__image img {
+  max-width: 100%;
+}
+
+.link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid #8491A0;
 }
 
 @media (min-width: 767.98px) {
@@ -475,6 +538,33 @@ body.ie .ibg img {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 1440px) {
+  .philosophy__body {
+    padding-top: -webkit-calc(48px + 72 * ((100vw - 320px) / 930));
+    padding-top: calc(48px + 72 * ((100vw - 320px) / 930));
+  }
+
+  .philosophy__body {
+    padding-bottom: -webkit-calc(51px + 73 * ((100vw - 320px) / 930));
+    padding-bottom: calc(51px + 73 * ((100vw - 320px) / 930));
+  }
+
+  .philosophy__body {
+    padding-right: -webkit-calc(20px + 52 * ((100vw - 320px) / 930));
+    padding-right: calc(20px + 52 * ((100vw - 320px) / 930));
+  }
+
+  .philosophy__body {
+    padding-left: -webkit-calc(20px + 52 * ((100vw - 320px) / 930));
+    padding-left: calc(20px + 52 * ((100vw - 320px) / 930));
+  }
+
+  .philosophy__text {
+    margin-bottom: -webkit-calc(67px + 67 * ((100vw - 320px) / 930));
+    margin-bottom: calc(67px + 67 * ((100vw - 320px) / 930));
   }
 }
 
@@ -496,11 +586,6 @@ body.ie .ibg img {
 
 @media (max-width: 1250px) {
   .work {
-    padding-bottom: -webkit-calc(48px + 72 * ((100vw - 320px) / 930));
-    padding-bottom: calc(48px + 72 * ((100vw - 320px) / 930));
-  }
-
-  .work {
     padding-top: -webkit-calc(48px + 72 * ((100vw - 320px) / 930));
     padding-top: calc(48px + 72 * ((100vw - 320px) / 930));
   }
@@ -508,6 +593,11 @@ body.ie .ibg img {
   .work__title {
     margin-bottom: -webkit-calc(20px + 20 * ((100vw - 320px) / 930));
     margin-bottom: calc(20px + 20 * ((100vw - 320px) / 930));
+  }
+
+  .work__columns:last-child {
+    margin-bottom: -webkit-calc(48px + 72 * ((100vw - 320px) / 930));
+    margin-bottom: calc(48px + 72 * ((100vw - 320px) / 930));
   }
 
   .work__subject {
@@ -518,6 +608,11 @@ body.ie .ibg img {
   .title {
     font-size: -webkit-calc(32px + 23 * ((100vw - 320px) / 930));
     font-size: calc(32px + 23 * ((100vw - 320px) / 930));
+  }
+
+  .title {
+    line-height: -webkit-calc(38px + 28 * ((100vw - 320px) / 930));
+    line-height: calc(38px + 28 * ((100vw - 320px) / 930));
   }
 }
 
@@ -690,6 +785,13 @@ body.ie .ibg img {
 
   .work__columns {
     padding: 0 15px;
+  }
+
+  .philosophy__column {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
