@@ -23,3 +23,4 @@ burgerMenu.addEventListener('click', (e) => {
 	iteratingClass.forEach(item => item.classList.toggle("active"))
 	body.classList.toggle('lock');
 });
+

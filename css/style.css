@@ -538,6 +538,7 @@ body.ie .ibg img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  Padding-bottom: 120px;
 }
 
 .skillset__columns_1 {
@@ -607,6 +608,70 @@ body.ie .ibg img {
   font-size: 16px;
   color: #8491A0;
   line-height: 1.5;
+}
+
+.skillset__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.skillset__item {
+  height: 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 16.666%;
+      -ms-flex: 0 1 16.666%;
+          flex: 0 1 16.666%;
+  border: 1px solid #181823;
+}
+
+.skillset-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project {
+  background-color: #000;
+  color: #fff;
+}
+
+.project__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12px;
+}
+
+.project__columns {
+  padding: 0 12px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.project-container {
+  max-width: 1296px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: 767.98px) {
@@ -702,6 +767,11 @@ body.ie .ibg img {
     Padding-top: calc(60px + 60 * ((100vw - 320px) / 930));
   }
 
+  .skillset__row {
+    Padding-bottom: -webkit-calc(60px + 60 * ((100vw - 320px) / 930));
+    Padding-bottom: calc(60px + 60 * ((100vw - 320px) / 930));
+  }
+
   .skillset__title {
     margin-bottom: -webkit-calc(16px + 8 * ((100vw - 320px) / 930));
     margin-bottom: calc(16px + 8 * ((100vw - 320px) / 930));
@@ -760,6 +830,24 @@ body.ie .ibg img {
   .skillset__element:last-child,
   .skillset__element:nth-last-child(2) {
     padding: 0 10px 0;
+  }
+
+  .skillset__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 33.333%;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+  }
+
+  .skillset__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .skillset-container {
+    max-width: 750px;
   }
 }
 
