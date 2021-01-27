@@ -818,6 +818,88 @@ body.ie .ibg img {
   max-width: 100%;
 }
 
+.dribbble {
+  background-color: #000;
+  color: #fff;
+  padding-top: 120px;
+}
+
+.dribbble__title {
+  margin: 0 0 24px 0;
+}
+
+.dribbble__text {
+  color: #8491A0;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+
+.dribbble__link {
+  margin-bottom: 124px;
+}
+
+.dribbble__link a {
+  color: #fff;
+}
+
+.dribbble__body {
+  background-color: #181823;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  position: relative;
+}
+
+.dribbble__body::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 52px;
+  width: 12px;
+  height: 12px;
+  background-color: #5B6876;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.dribbble__body span::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  width: 12px;
+  height: 12px;
+  background-color: #5B6876;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.dribbble__body span::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 34px;
+  width: 12px;
+  height: 12px;
+  background-color: #5B6876;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.dribbble__image {
+  padding: 36px 0 0 0;
+}
+
+.dribbble__image img {
+  max-width: 100%;
+}
+
+.dribbble-container {
+  max-width: 1076px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media (min-width: 767.98px) {
   .header__link_bg {
     background-color: #5221E6;
@@ -1006,6 +1088,37 @@ body.ie .ibg img {
 
   .header__title {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .dribbble-container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 1090px) and (max-width: 1090px) {
+  .dribbble-container {
+    padding-right: -webkit-calc(20px + 20 * ((100vw - 320px) / 930));
+    padding-right: calc(20px + 20 * ((100vw - 320px) / 930));
+  }
+
+  .dribbble-container {
+    padding-left: -webkit-calc(20px + 20 * ((100vw - 320px) / 930));
+    padding-left: calc(20px + 20 * ((100vw - 320px) / 930));
+  }
+}
+
+@media (max-width: 1076px) {
+  .dribbble {
+    padding-top: -webkit-calc(60px + 60 * ((100vw - 320px) / 930));
+    padding-top: calc(60px + 60 * ((100vw - 320px) / 930));
+  }
+
+  .dribbble__link {
+    margin-bottom: -webkit-calc(68px + 56 * ((100vw - 320px) / 930));
+    margin-bottom: calc(68px + 56 * ((100vw - 320px) / 930));
   }
 }
 
