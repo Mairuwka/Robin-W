@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "ACaslonPro-SemiboldItalic";
-  font-display: swap;
-  src: url("../fonts/ACaslonPro-SemiboldItalic.woff") format("woff"), url("../fonts/ACaslonPro-SemiboldItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 * {
   padding: 0px;
   margin: 0px;
@@ -774,6 +766,58 @@ body.ie .ibg img {
   padding: 0 15px;
 }
 
+.instagram {
+  background-color: #FBE4FF;
+}
+
+.instagram__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.instagram__column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.instagram__body {
+  padding-top: 120px;
+  padding-bottom: 124px;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+
+.instagram__title {
+  margin: 0 0 24px 0;
+  color: #181823;
+}
+
+.instagram__text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5B6876;
+  margin-bottom: 134px;
+}
+
+.instagram__link a {
+  color: #181823;
+}
+
+.instagram__image {
+  height: 100%;
+}
+
+.instagram__image img {
+  max-width: 100%;
+}
+
 @media (min-width: 767.98px) {
   .header__link_bg {
     background-color: #5221E6;
@@ -810,6 +854,31 @@ body.ie .ibg img {
   }
 
   .philosophy__text {
+    margin-bottom: -webkit-calc(67px + 67 * ((100vw - 320px) / 930));
+    margin-bottom: calc(67px + 67 * ((100vw - 320px) / 930));
+  }
+
+  .instagram__body {
+    padding-top: -webkit-calc(48px + 72 * ((100vw - 320px) / 930));
+    padding-top: calc(48px + 72 * ((100vw - 320px) / 930));
+  }
+
+  .instagram__body {
+    padding-bottom: -webkit-calc(51px + 73 * ((100vw - 320px) / 930));
+    padding-bottom: calc(51px + 73 * ((100vw - 320px) / 930));
+  }
+
+  .instagram__body {
+    padding-right: -webkit-calc(20px + 52 * ((100vw - 320px) / 930));
+    padding-right: calc(20px + 52 * ((100vw - 320px) / 930));
+  }
+
+  .instagram__body {
+    padding-left: -webkit-calc(20px + 52 * ((100vw - 320px) / 930));
+    padding-left: calc(20px + 52 * ((100vw - 320px) / 930));
+  }
+
+  .instagram__text {
     margin-bottom: -webkit-calc(67px + 67 * ((100vw - 320px) / 930));
     margin-bottom: calc(67px + 67 * ((100vw - 320px) / 930));
   }
@@ -1199,6 +1268,13 @@ body.ie .ibg img {
   .project-container {
     max-width: 636px;
     padding: 0 10px;
+  }
+
+  .instagram__column {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
