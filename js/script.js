@@ -24,3 +24,20 @@ burgerMenu.addEventListener('click', (e) => {
 	body.classList.toggle('lock');
 });
 
+
+
+let filterItem = document.querySelectorAll('.photography__item');
+let columnItem = document.querySelectorAll('.photography__column');
+let columnItemIndex = document.querySelectorAll('.photography__column.t_1');
+columnItem.forEach(iter => iter.style.display = "none");
+columnItemIndex.forEach(i => i.style.display = "block");
+
+filterItem.forEach(index => index.addEventListener('click', (event) => {
+	let item = event.target.dataset.filter;
+	let columnItemIndex = document.querySelectorAll('.photography__column.t_'+item);
+	columnItem.forEach(iter => iter.style.display = "none");
+	columnItemIndex.forEach(i => i.style.display = "block");
+	filterItem.forEach(y => y.classList.remove('active'));
+	event.target.classList.add('active');
+	return false;
+}));
